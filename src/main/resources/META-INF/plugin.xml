@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>dev.redbrains.hypernotes</id>
+    <name>hypernotes</name>
+    <vendor email="support@redbrains.dev" url="https://www.redbrains.dev">Red Brains</vendor>
+
+    <description><![CDATA[
+    hyper scratches for Jedi Developers
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="MyPlugin.SampleMenu" text="Greeting" description="Greeting menu">
+            <add-to-group group-id="ToolWindowsGroup" anchor="last"/>
+            <action id="Myplugin.Textboxes" class="dev.redbrains.HelloAction" text="Hello" description="Says hello"/>
+        </group>
+    </actions>
+</idea-plugin>
